@@ -1,0 +1,42 @@
+<section id="view-profile" class="panel-card hidden">
+    <div class="panel-header">
+        <h2>Профіль користувача та безпека облікового запису</h2>
+        <button type="button" id="profile-logout-btn" class="btn-action-sm btn-danger-sm">Вийти із системи</button>
+    </div>
+    <div class="panel-body">
+        <div class="profile-grid">
+            <div class="profile-info-card">
+                <h3 class="profile-section-title">Основні дані</h3>
+                <div class="profile-field">
+                    <span class="profile-label">Повне ім'я:</span>
+                    <strong id="profile-full-name">—</strong>
+                </div>
+                <div class="profile-field">
+                    <span class="profile-label">Електронна пошта:</span>
+                    <span id="profile-email">—</span>
+                </div>
+                <div class="profile-field">
+                    <span class="profile-label">Роль у системі:</span>
+                    <span id="profile-role" class="badge-status badge-info">—</span>
+                </div>
+                <div class="profile-field">
+                    <span class="profile-label">Спосіб входу:</span>
+                    <span id="profile-auth-method">Локальний акаунт (PBKDF2-SHA256)</span>
+                </div>
+            </div>
+
+            <div class="profile-info-card">
+                <h3 class="profile-section-title">Статус безпеки</h3>
+                <div class="profile-field">
+                    <span class="profile-label">Активація пошти:</span>
+                    <span id="profile-verified-badge" class="badge-status badge-queued">Не активовано</span>
+                </div>
+                <div class="profile-field">
+                    <span class="profile-label">Двофакторна автентифікація (2FA):</span>
+                    <span id="profile-2fa-badge" class="badge-status badge-closed">Вимкнено</span>
+                </div>
+                <div id="profile-security-actions" class="profile-actions-area"></div>
+            </div>
+        </div>
+    </div>
+</section>

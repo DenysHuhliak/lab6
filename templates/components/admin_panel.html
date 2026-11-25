@@ -1,0 +1,72 @@
+<section id="view-admin" class="panel-card hidden">
+    <div class="panel-header">
+        <h2>Панель адміністратора: облікові записи та журнал входів</h2>
+        <button type="button" id="admin-refresh-btn" class="btn-action-sm btn-book">Оновити дані</button>
+    </div>
+    <div class="panel-body admin-panel-body">
+        <div class="admin-block">
+            <h3 class="admin-section-title">Користувачі системи та керування доступом</h3>
+            <div class="table-responsive">
+                <table class="pnu-table">
+                    <thead>
+                        <tr>
+                            <th>Користувач</th>
+                            <th>Роль</th>
+                            <th>Безпека</th>
+                            <th>Статус доступу</th>
+                            <th>Невдалі спроби</th>
+                            <th>Дії</th>
+                        </tr>
+                    </thead>
+                    <tbody id="admin-users-body"></tbody>
+                </table>
+            </div>
+        </div>
+
+        <div class="admin-block">
+            <div class="admin-section-header">
+                <h3 class="admin-section-title">Журнал спроб входу</h3>
+                <div class="admin-filter-row">
+                    <input type="text" id="admin-log-email-filter" class="pnu-input admin-search-input" placeholder="Фільтр за email...">
+                    <button type="button" id="admin-log-filter-btn" class="btn-secondary-sm">Знайти</button>
+                </div>
+            </div>
+
+            <div class="admin-summary-block">
+                <h4 class="admin-subsection-title">Зведена статистика за обліковими записами</h4>
+                <div class="table-responsive">
+                    <table class="pnu-table pnu-table-compact">
+                        <thead>
+                            <tr>
+                                <th>Email</th>
+                                <th>Усього спроб</th>
+                                <th>Успішних</th>
+                                <th>Невдалих</th>
+                                <th>Остання спроба</th>
+                            </tr>
+                        </thead>
+                        <tbody id="admin-logs-summary-body"></tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="admin-logs-block">
+                <h4 class="admin-subsection-title">Детальна історія спроб входу</h4>
+                <div class="table-responsive">
+                    <table class="pnu-table pnu-table-compact">
+                        <thead>
+                            <tr>
+                                <th>Час</th>
+                                <th>Email</th>
+                                <th>IP-адреса</th>
+                                <th>Результат</th>
+                                <th>Причина / Подія</th>
+                            </tr>
+                        </thead>
+                        <tbody id="admin-logs-body"></tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
